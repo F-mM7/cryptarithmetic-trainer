@@ -17,6 +17,7 @@ function App() {
   const handleGenerate = async () => {
     setIsGenerating(true);
     setError(null);
+    setResult(null); // 解答を隠す
 
     // 非同期処理として実行（UIをブロックしない）
     setTimeout(() => {
@@ -54,11 +55,6 @@ function App() {
 
   return (
     <div className="app">
-      <header className="app-header">
-        <h1>cryptarithmetic-trainer - 覆面算ジェネレーター</h1>
-        <p>覆面算を自動生成するツール</p>
-      </header>
-
       <main className="app-main">
         <div className="settings-section">
           <SettingsPanel

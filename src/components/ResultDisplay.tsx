@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { GenerationResult } from '../types/cryptarithmetic';
 import './ResultDisplay.css';
 
@@ -20,6 +20,11 @@ function renderMixedString(str: string) {
 
 export function ResultDisplay({ result }: ResultDisplayProps) {
   const [showSolution, setShowSolution] = useState(false);
+
+  // result が変わったら解答を隠す
+  useEffect(() => {
+    setShowSolution(false);
+  }, [result]);
 
   if (!result) {
     return (
