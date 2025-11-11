@@ -61,7 +61,7 @@ export function SettingsPanel({
           onChange={(e) => onMinCoverageRateChange(Number(e.target.value))}
         />
         <p className="help-text">
-          この割合以下の覆面率の問題は棄却されます
+          指定された覆面率を保証します。高い最低覆面率を指定すると、計算時間が長くなるおそれがあります。
         </p>
       </div>
 
