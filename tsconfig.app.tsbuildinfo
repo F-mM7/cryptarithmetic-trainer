@@ -1,0 +1,1 @@
+{"root":["./src/App.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/ResultDisplay.tsx","./src/components/SettingsPanel.tsx","./src/generators/cryptarithmetic-generator.ts","./src/generators/number-generator.ts","./src/solvers/backtracking.ts","./src/solvers/types.ts","./src/types/cryptarithmetic.ts","./src/utils/weighted-random.ts"],"version":"5.8.3"}

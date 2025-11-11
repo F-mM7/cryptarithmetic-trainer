@@ -1,0 +1,107 @@
+.settings-panel {
+  background-color: #2a2a2a;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.settings-panel h2 {
+  margin: 0 0 1.5rem 0;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+
+.setting-group {
+  margin-bottom: 1.5rem;
+}
+
+.setting-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #d0d0d0;
+  font-weight: 500;
+}
+
+.setting-group select,
+.setting-group input[type="range"] {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: #3a3a3a;
+  border: 1px solid #4a4a4a;
+  border-radius: 4px;
+  color: #e0e0e0;
+}
+
+.setting-group select {
+  cursor: pointer;
+}
+
+.setting-group select:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.radio-group label:hover {
+  background-color: #3a3a3a;
+}
+
+.radio-group input[type="radio"] {
+  cursor: pointer;
+  accent-color: #3498db;
+}
+
+.radio-group input[type="radio"]:disabled {
+  cursor: not-allowed;
+}
+
+.generate-button {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.generate-button:hover:not(:disabled) {
+  background-color: #2980b9;
+}
+
+.generate-button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #e74c3c;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.help-text {
+  margin: 0.5rem 0 0 0;
+  color: #999;
+  font-size: 0.85rem;
+  font-weight: normal;
+}
